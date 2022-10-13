@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <title>Document</title>
+</head>
+<body>
+  <div id="eventsCountry"></div>
+  <script type="text/javascript">
+    var eventsCountryChart = "events_country.vg.json";
+    vegaEmbed("#eventsCountry", eventsCountryChart).then(function(result){}).catch(console.error);
+  </script>
+  <br>
+  <div id="pickedMap"></div>
+  <script type="text/javascript">
+    var pickedMap = "most_picked_bar_chart.vg.json";
+    vegaEmbed("#pickedMap", pickedMap).then(function(result){}).catch(console.error);
+  </script>
+  <div id="removedMap"></div>
+  <script type="text/javascript">
+    var removedMap = "most_removed_multibar_chart.vg.json";
+    vegaEmbed("#removedMap", removedMap).then(function(result){}).catch(console.error);
+  </script>
+</body>
+</html>
