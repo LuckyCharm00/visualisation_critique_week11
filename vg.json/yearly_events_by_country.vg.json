@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 300,
+  "description": "Total CS:GO Competitive Events Of All Time",
+  "data": {"url": "top_10_yearly_events.csv",
+  "format": {"parse" : {"year_match": "date:'%Y'"}}},
+  "layer": [
+  {
+    "mark": "rect",
+    "data": {
+      "values": [
+        {
+          "start": "2016",
+          "end": "2018",
+          "event": "CS:GO Popularity Peak"
+        },
+        {
+          "start": "2019",
+          "end": "2020",
+          "event": "CS:GO Popularity Decline"
+        }
+      ],
+      "format": {
+        "parse": {"start": "date:'%Y'", "end": "date:'%Y'"}
+      }
+    },
+    "encoding": {
+      "x": {
+        "field": "start",
+        "timeUnit": "year"
+      },
+      "x2": {
+        "field": "end",
+        "timeUnit": "year"
+      },
+      "color": {"field": "event", "type": "nominal"}
+    }
+  },
+  {
+    "mark": {
+      "type": "line",
+      "point": true
+    },
+    "encoding": {
+      "x": {"timeUnit": "year", "field": "year_match"},
+      "y": {"field": "total_events", "type": "quantitative"},
+      "color": {"field": "country", "type": "nominal"}
+    }
+  }
+]
+}
+        

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Top 10 Most Winning Team (2015-2020)",
+  "width": 300,
+  "height": 60,
+  "data": {"url": "top_10_winning_teams.csv"},
+  "mark": {"type": "area", "line": true, "point": true},
+  "encoding": {
+    "x": {
+      "field": "year_match",
+      "type": "temporal",
+      "title": "Time",
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "total_wins",
+      "type": "quantitative",
+
+      "title": "Total Victories",
+      "axis": {"grid": false}
+    },
+    "color": {
+      "field": "winning_team",
+      "type": "nominal",
+      "legend": null
+    },
+    "row": {
+      "field": "winning_team",
+      "type": "nominal",
+      "title": "Symbol"
+    }
+  }
+}

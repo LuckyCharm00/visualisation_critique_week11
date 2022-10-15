@@ -15,6 +15,11 @@
     var eventsCountryChart = "events_country.vg.json";
     vegaEmbed("#eventsCountry", eventsCountryChart).then(function(result){}).catch(console.error);
   </script>
+  <div id="eventsCountryOvertime"></div>
+  <script type="text/javascript">
+    var eventsCountryOvertime = "yearly_events_by_country.vg.json";
+    vegaEmbed("#eventsCountryOvertime", eventsCountryOvertime).then(function(result){}).catch(console.error);
+  </script>
   <br>
   <div id="pickedMap"></div>
   <script type="text/javascript">
@@ -25,6 +30,12 @@
   <script type="text/javascript">
     var removedMap = "most_removed_multibar_chart.vg.json";
     vegaEmbed("#removedMap", removedMap).then(function(result){}).catch(console.error);
+  </script>
+  <br>
+  <div id="top_10_team_all_time"></div>
+  <script type="text/javascript">
+    var top_10_team_all_time = "top_10_most_winning_team.vg.json";
+    vegaEmbed("#top_10_team_all_time", top_10_team_all_time).then(function(result){}).catch(console.error);
   </script>
 </body>
 </html>
