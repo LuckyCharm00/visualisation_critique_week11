@@ -5,13 +5,14 @@
   "width":"container",
   "height":"container",
   "encoding": {
-    "x": {"field": "year_match", "type": "temporal", "title": "Month Of Year", "timeUnit": "utcyearmonth"},
+    "x": {"field": "year_match", "type": "temporal", "title": "Year", "timeUnit": "utcyear"},
     "y": {"field": "total_events", "type": "quantitative", "title": "Total Events"},
     "color": {
       "condition": {
         "param": "hover",
         "field":"country",
-        "type":"nominal"
+        "type":"nominal",
+        "title": "Top 10 Country"
       },
       "value": "grey"
     },

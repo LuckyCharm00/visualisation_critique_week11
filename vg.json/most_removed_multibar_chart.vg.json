@@ -15,7 +15,8 @@
                   "type": "nominal",
                   "title": "Map Name"},
                 {"field": "variable",
-                "type": "nominal"},
+                "type": "nominal",
+                 "title": "Category"},
                 {"field": "value",
                  "type": "quantitative",
                  "title": "Number of Times Picked"}]

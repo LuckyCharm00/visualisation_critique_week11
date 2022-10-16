@@ -9,8 +9,9 @@
     "x": {
       "field": "year_match",
       "type": "temporal",
-      "title": "Time",
-      "axis": {"grid": false}
+      "title": "Year",
+      "axis": {"grid": false},
+      "timeUnit": "utcyear"
     },
     "y": {
       "field": "total_wins",
