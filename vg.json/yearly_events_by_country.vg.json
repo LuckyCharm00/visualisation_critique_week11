@@ -5,7 +5,7 @@
   "width":"container",
   "height":"container",
   "encoding": {
-    "x": {"field": "year_match", "type": "temporal", "title": "Month Of Year"},
+    "x": {"field": "year_match", "type": "temporal", "title": "Month Of Year", "timeUnit": "utcyearmonth"},
     "y": {"field": "total_events", "type": "quantitative", "title": "Total Events"},
     "color": {
       "condition": {

@@ -4,18 +4,31 @@
   "width":"container",
   "height":"container",
   "data" : {"url" : "https://raw.githubusercontent.com/LuckyCharm00/visualisation_critique_week11/main/preprocessed_dataset/most_picked_map.csv"},
-  "mark" : "bar",
-  "encoding" : {
-    "x" : {"field":"map_names", "title": "Map Names"},
-    "y" : {"field":"value", "type":"quantitative", "title": "Number of Times Picked"},
-    "xOffset" : {"field":"variable"},
-    "color" : {"field":"variable",
-               "legend":{"title":"Category"}},
-    "tooltip" : [{"field": "map_names",
-                  "type": "nominal",
-                  "title": "Map Name"},
+  "layer": [{
+    "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff",
+             "tooltip": true},
+    "params": [{"name": "Map Names",
+                "select": {"type": "point", "fields": ["map_names"]},
+                "bind": "legend"}]
+  },{
+    "mark": {"type": "text", "radiusOffset": 20},
+    "encoding": {
+      "text": {"field": "value", "type": "quantitative"}
+    }
+  }],
+  "encoding": {
+    "theta": {"field": "value", "type": "quantitative", "stack": true},
+    "radius": {"field": "value", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
+    "color": {"field": "map_names", "type": "nominal", "legend": {"title": "Map Names"}},
+    "tooltip": [{"field": "map_names",
+                "type": "nominal",
+                "title": "Map Name"},
                 {"field": "value",
-                 "type": "quantitative",
-                 "title": "Number of Times Picked"}]
+                "type": "quantitative",
+                "title": "Number Of Times Picked"}],
+    "opacity": {
+      "condition": {"param": "Map Names", "value":1},
+      "value": 0.2
+    }
   }
 }
