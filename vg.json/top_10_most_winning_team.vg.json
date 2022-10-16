@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Top 10 Most Winning Team (2015-2020)",
+  "title": "Top 10 Most Winning Team (2015-2020)",
   "width": 500,
   "height": 60,
   "data": {"url": "https://raw.githubusercontent.com/LuckyCharm00/visualisation_critique_week11/main/preprocessed_dataset/top_10_winning_teams.csv"},

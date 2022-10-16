@@ -1,11 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
+  "title": "All Time Events By Country (2015-2020)",
   "data": {"url": "https://raw.githubusercontent.com/LuckyCharm00/visualisation_critique_week11/main/preprocessed_dataset/top_10_yearly_events.csv"},
   "width": 600,
   "height": 400,
   "encoding": {
-    "x": {"field": "year_match", "type": "temporal", "title": "Year"},
+    "x": {"field": "year_match", "type": "temporal", "title": "Month Of Year"},
     "y": {"field": "total_events", "type": "quantitative", "title": "Total Events"},
     "color": {
       "condition": {
@@ -23,8 +23,14 @@
       "value": 0.2
     },
     "tooltip": [{"field":"total_events",
+                 "type":"quantitative",
+                 "title":"Total Events"},
+                {"field":"year_match",
+                 "type":"temporal",
+                 "title":"Date Of Event"},
+                 {"field":"country",
                  "type":"nominal",
-                 "title":"Total Events"}]
+                 "title":"Country"}]
   },
   "layer": [{
     "description": "transparent layer to make it easier to trigger selection",

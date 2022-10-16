@@ -1,28 +1,28 @@
 ,map_names,variable,value
-9,Mirage,total_first_removed,3102
-10,Inferno,total_first_removed,2976
-11,Train,total_first_removed,4179
-12,Overpass,total_first_removed,4939
-13,Dust2,total_first_removed,2454
-14,Nuke,total_first_removed,6416
-15,Cache,total_first_removed,3790
-16,Cobblestone,total_first_removed,2172
-17,Vertigo,total_first_removed,2041
-18,Mirage,total_second_removed,4116
-19,Inferno,total_second_removed,3909
-20,Train,total_second_removed,4721
-21,Overpass,total_second_removed,4974
-22,Dust2,total_second_removed,3118
-23,Nuke,total_second_removed,4296
-24,Cache,total_second_removed,3535
-25,Cobblestone,total_second_removed,2093
-26,Vertigo,total_second_removed,1291
-27,Mirage,total_third_removed,1538
-28,Inferno,total_third_removed,1541
-29,Train,total_third_removed,1566
-30,Overpass,total_third_removed,1522
-31,Dust2,total_third_removed,790
-32,Nuke,total_third_removed,1613
-33,Cache,total_third_removed,1192
-34,Cobblestone,total_third_removed,872
-35,Vertigo,total_third_removed,384
+9,Mirage,Removed At First Pick,3102
+10,Inferno,Removed At First Pick,2976
+11,Train,Removed At First Pick,4179
+12,Overpass,Removed At First Pick,4939
+13,Dust2,Removed At First Pick,2454
+14,Nuke,Removed At First Pick,6416
+15,Cache,Removed At First Pick,3790
+16,Cobblestone,Removed At First Pick,2172
+17,Vertigo,Removed At First Pick,2041
+18,Mirage,Removed At Second Pick,4116
+19,Inferno,Removed At Second Pick,3909
+20,Train,Removed At Second Pick,4721
+21,Overpass,Removed At Second Pick,4974
+22,Dust2,Removed At Second Pick,3118
+23,Nuke,Removed At Second Pick,4296
+24,Cache,Removed At Second Pick,3535
+25,Cobblestone,Removed At Second Pick,2093
+26,Vertigo,Removed At Second Pick,1291
+27,Mirage,Removed At Third Pick,1538
+28,Inferno,Removed At Third Pick,1541
+29,Train,Removed At Third Pick,1566
+30,Overpass,Removed At Third Pick,1522
+31,Dust2,Removed At Third Pick,790
+32,Nuke,Removed At Third Pick,1613
+33,Cache,Removed At Third Pick,1192
+34,Cobblestone,Removed At Third Pick,872
+35,Vertigo,Removed At Third Pick,384

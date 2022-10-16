@@ -9,6 +9,12 @@
     "x" : {"field":"map_names", "title": "Map Names"},
     "y" : {"field":"value", "type":"quantitative", "title": "Number of Times Picked"},
     "xOffset" : {"field":"variable"},
-    "color" : {"field":"variable"}
+    "color" : {"field":"variable"},
+    "tooltip" : [{"field": "map_names",
+                  "type": "nominal",
+                  "title": "Map Name"},
+                {"field": "value",
+                 "type": "quantitative",
+                 "title": "Number of Times Picked"}]
   }
 }
