@@ -1,0 +1,331 @@
+body {
+  background-color: #f6f6e9;
+}
+
+h1, h2 {
+  font-family: 'Josefin Sans';
+}
+
+p {
+  font-family: 'Montserrat';
+}
+
+.chartsBody {
+  background-color: white;
+
+  height: 3650px;
+  width: 70%;
+
+  justify-content: center;
+
+  margin: 0 auto;
+
+  padding-left: 3%;
+  padding-right: 0.7%;
+  padding-top: 1%;
+
+  border-radius: 7px;
+  border: 4px solid #194769;
+  box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.chartsBody:hover {
+  box-shadow: 16px 16px 16px 16px rgba(0,0,0,0.2);
+}
+
+.csgoDataVisualisationOpening {
+  border-radius: 5px;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+  text-align: left;
+
+  margin-right: 3%;
+  margin-bottom: 5%;
+}
+
+.csgoDataVisualisationOpening:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.title {
+  background-color: #194769;
+  color:#f6f6e9;
+
+  border-radius: 5px 5px 0 0;
+
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+}
+
+.openingParagraph {
+  margin-right: 3%;
+  margin-bottom: 3%;
+
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+}
+
+.eventsCountry, .eventsCountryOvertime,
+.pickedMap, .removedMap{
+  height: 500px;
+  width: 54%;
+}
+
+/* CONTENT 1 */
+
+.content1 {
+  height: 500px;
+  margin-bottom: 5%;
+}
+
+.eventsCountry {
+  float: left;
+}
+
+.narrative1{
+  float: right;
+  width: 42%;
+
+  border-radius: 5px;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+  text-align: left;
+  margin-right: 3%;
+}
+
+.narrative1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#title-n1 {
+  background-color: #194769;
+  color:#f6f6e9;
+
+  margin-top: -0.1%;
+  border-radius: 5px 5px 0 0;
+
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#text-n1 {
+  padding-top: 0.5%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%
+}
+
+/* CONTENT 2 */
+
+.content2 {
+  height: 500px;
+  margin-bottom: 5%;
+}
+
+.eventsCountryOvertime {
+  float: right;
+}
+
+.narrative2{
+  float: left;
+  width: 42%;
+
+  border-radius: 5px;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+  text-align: left;
+  margin-right: 3%;
+}
+
+.narrative2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#title-n2 {
+  text-align: right;
+  background-color: #194769;
+  color:#f6f6e9;
+
+  margin-top: -0.1%;
+  border-radius: 5px 5px 0 0;
+
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+#text-n2 {
+  text-align: right;
+
+  padding-top: 0.5%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%
+}
+
+/* CONTENT 3 */
+
+.content3 {
+  height: 500px;
+  margin-bottom: 5%;
+}
+
+.pickedMap {
+  float: left;
+}
+
+.narrative3{
+  float: right;
+  width: 42%;
+
+  border-radius: 5px;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+  text-align: left;
+  margin-right: 3%;
+}
+
+.narrative3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#title-n3 {
+  background-color: #194769;
+  color:#f6f6e9;
+
+  margin-top: -0.1%;
+  border-radius: 5px 5px 0 0;
+
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#text-n3 {
+  padding-top: 0.5%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%
+}
+
+/* CONTENT 4 */
+
+.content4 {
+  height: 500px;
+  margin-bottom: 5%;
+}
+
+.eventsCountryOvertime {
+  float: right;
+}
+
+.narrative4{
+  float: left;
+  width: 42%;
+
+  border-radius: 5px;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+  text-align: left;
+  margin-right: 3%;
+}
+
+.narrative4:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#title-n4 {
+  text-align: right;
+  background-color: #194769;
+  color:#f6f6e9;
+
+  margin-top: -0.1%;
+  border-radius: 5px 5px 0 0;
+
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 3%;
+  padding-right: 3%;
+}
+
+#text-n4 {
+  text-align: right;
+
+  padding-top: 0.5%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%
+}
+
+/* CONTENT 5 */
+
+.content5 {
+  height: 500px;
+  margin-bottom: 28.5%;
+}
+
+.top10TeamAllTime {
+  float: left;
+}
+
+.narrative5{
+  float: right;
+  width: 42%;
+
+  border-radius: 5px;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+  text-align: left;
+  margin-right: 3%;
+}
+
+.narrative5:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#title-n5 {
+  background-color: #194769;
+  color:#f6f6e9;
+
+  margin-top: -0.1%;
+  border-radius: 5px 5px 0 0;
+
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#text-n5 {
+  padding-top: 0.5%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%
+}
+
+/*Copyright*/
+
+#copyright {
+  text-align: left;
+  opacity: 0.3;
+  margin-left: 2%;
+}

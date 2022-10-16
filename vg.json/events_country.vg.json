@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "All Time Matches (2015-2020)",
-  "width": 600,
-  "height": 400,
+  "width":"container",
+  "height":"container",
   "projection": {"type": "equalEarth"},
   "data": {"url": "https://raw.githubusercontent.com/LuckyCharm00/visualisation_critique_week11/main/vg.json/ne_110m.json",
            "format": {"type": "topojson", 

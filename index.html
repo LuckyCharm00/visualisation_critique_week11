@@ -1,41 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <title>Document</title>
 </head>
 <body>
-  <div id="eventsCountry"></div>
-  <script type="text/javascript">
-    var eventsCountryChart = "vg.json/events_country.vg.json";
-    vegaEmbed("#eventsCountry", eventsCountryChart).then(function(result){}).catch(console.error);
-  </script>
-  <div id="eventsCountryOvertime"></div>
-  <script type="text/javascript">
-    var eventsCountryOvertime = "vg.json/yearly_events_by_country.vg.json";
-    vegaEmbed("#eventsCountryOvertime", eventsCountryOvertime).then(function(result){}).catch(console.error);
-  </script>
-  <br>
-  <div id="pickedMap"></div>
-  <script type="text/javascript">
-    var pickedMap = "vg.json/most_picked_bar_chart.vg.json";
-    vegaEmbed("#pickedMap", pickedMap).then(function(result){}).catch(console.error);
-  </script>
-  <div id="removedMap"></div>
-  <script type="text/javascript">
-    var removedMap = "vg.json/most_removed_multibar_chart.vg.json";
-    vegaEmbed("#removedMap", removedMap).then(function(result){}).catch(console.error);
-  </script>
-  <br>
-  <div id="top_10_team_all_time"></div>
-  <script type="text/javascript">
-    var top_10_team_all_time = "vg.json/top_10_most_winning_team.vg.json";
-    vegaEmbed("#top_10_team_all_time", top_10_team_all_time).then(function(result){}).catch(console.error);
-  </script>
+  <div class="chartsBody">
+    <div class="csgoDataVisualisationOpening">
+      <h1 class="title">CS:GO Data Visualisation</h1>
+      <p class="openingParagraph">
+        Counter Strike: Global Offensive, widely known as CS:GO, is a FPS (First Person Shooting) Game.
+        CS:GO is the most up-to-date release of the Counter Strike line-up. 
+        Since its first release in 2012, it has attracted on average of 11 Million Monthly Users.
+        <br><br>
+        CS:GO is highly competitive game where players and teams worlwide relies on hours and hours of practice,
+        to excel on map mastery, team chemistry, timing, in-game strategy, aiming accuracy and reaction time.
+        <br><br>
+        The following represents data acquired from the Official SportsData.io Website, detailing
+        the popularity of CS:GO across the world, the demand of the game across its lifespan, 
+        the most dominant teams, and the most favoured and hated maps in the game.
+
+      </p>
+    </div>
+    
+    <div class="content1">
+      <div id="eventsCountry" class="eventsCountry">
+        <script type="text/javascript">
+          var eventsCountryChart = "vg.json/events_country.vg.json";
+          vegaEmbed("#eventsCountry", eventsCountryChart).then(function(result){}).catch(console.error);
+        </script>
+      </div>
+
+      <div class="narrative1">
+        <h2 id="title-n1">How Well-Known Has CS:GO Been Across The World ?</h2>
+        <p id="text-n1">
+        Counter Strike: Global Offensive, widely known as CS:GO, is a FPS (First Person Shooting) Game.
+        CS:GO is the most up-to-date release of the Counter Strike line-up. 
+        Since its first release in 2012, it has attracted on average of 11 Million Monthly Users.
+        <br><br>
+        CS:GO is a highly competitive game where players and teams worlwide rely on hours and hours of practice,
+        to excel on map mastery, team chemistry, timing, in-game strategy, aiming accuracy and reaction time.
+        <br><br>
+        The following represents data acquired from the Official SportsData.io Website, detailing
+        the popularity of CS:GO across the world, the demand of the game across its lifespan, 
+        the most dominant teams, and the most favoured and hated maps in the game.
+        </p>
+      </div>
+    </div>
+
+    <div class="content2">
+      <div id="eventsCountryOvertime" class="eventsCountryOvertime">
+        <script type="text/javascript">
+          var eventsCountryOvertime = "vg.json/yearly_events_by_country.vg.json";
+          vegaEmbed("#eventsCountryOvertime", eventsCountryOvertime).then(function(result){}).catch(console.error);
+        </script>
+      </div>
+
+      <div class="narrative2">
+        <h2 id="title-n2">How Popular Has CS:GO Been Over Its Lifespan ?</h2>
+        <p id="text-n2">
+        Counter Strike: Global Offensive, widely known as CS:GO, is a FPS (First Person Shooting) Game.
+        CS:GO is the most up-to-date release of the Counter Strike line-up. 
+        Since its first release in 2012, it has attracted on average of 11 Million Monthly Users.
+        <br><br>
+        CS:GO is highly competitive game where players and teams worlwide relies on hours and hours of practice,
+        to excel on map mastery, team chemistry, timing, in-game strategy, aiming accuracy and reaction time.
+        <br><br>
+        The following represents data acquired from the Official SportsData.io Website, detailing
+        the popularity of CS:GO across the world, the demand of the game across its lifespan, 
+        the most dominant teams, and the most favoured and hated maps in the game.
+        </p>
+      </div>
+    </div>
+
+    <div class="content3">
+      <div id="pickedMap" class="pickedMap">
+        <script type="text/javascript">
+          var pickedMap = "vg.json/most_picked_bar_chart.vg.json";
+          vegaEmbed("#pickedMap", pickedMap).then(function(result){}).catch(console.error);
+        </script>
+      </div>
+
+      <div class="narrative3">
+        <h2 id="title-n3">The Most Favourite Maps In CS:GO</h2>
+        <p id="text-n3">
+        Counter Strike: Global Offensive, widely known as CS:GO, is a FPS (First Person Shooting) Game.
+        CS:GO is the most up-to-date release of the Counter Strike line-up. 
+        Since its first release in 2012, it has attracted on average of 11 Million Monthly Users.
+        <br><br>
+        CS:GO is highly competitive game where players and teams worlwide relies on hours and hours of practice,
+        to excel on map mastery, team chemistry, timing, in-game strategy, aiming accuracy and reaction time.
+        <br><br>
+        The following represents data acquired from the Official SportsData.io Website, detailing
+        the popularity of CS:GO across the world, the demand of the game across its lifespan, 
+        the most dominant teams, and the most favoured and hated maps in the game.
+        </p>
+      </div>
+    </div>
+    
+    <div class="content4">
+      <div id="removedMap" class="removedMap">
+        <script type="text/javascript">
+          var removedMap = "vg.json/most_removed_multibar_chart.vg.json";
+          vegaEmbed("#removedMap", removedMap).then(function(result){}).catch(console.error);
+        </script>
+      </div>
+
+      <div class="narrative4">
+        <h2 id="title-n4">The Most Hated Maps In CS:GO</h2>
+        <p id="text-n4">
+        Counter Strike: Global Offensive, widely known as CS:GO, is a FPS (First Person Shooting) Game.
+        CS:GO is the most up-to-date release of the Counter Strike line-up. 
+        Since its first release in 2012, it has attracted on average of 11 Million Monthly Users.
+        <br><br>
+        CS:GO is highly competitive game where players and teams worlwide relies on hours and hours of practice,
+        to excel on map mastery, team chemistry, timing, in-game strategy, aiming accuracy and reaction time.
+        <br><br>
+        The following represents data acquired from the Official SportsData.io Website, detailing
+        the popularity of CS:GO across the world, the demand of the game across its lifespan, 
+        the most dominant teams, and the most favoured and hated maps in the game.
+        </p>
+      </div>
+    </div>
+
+    <div class="content5">
+      <div id="top_10_team_all_time" class="top10TeamAllTime">
+        <script type="text/javascript">
+          var top_10_team_all_time = "vg.json/top_10_most_winning_team.vg.json";
+          vegaEmbed("#top_10_team_all_time", top_10_team_all_time).then(function(result){}).catch(console.error);
+        </script>
+      </div>
+
+      <div class="narrative5">
+        <h2 id="title-n5">Who Are The Most Dominant Teams In CS:GO ?</h2>
+        <p id="text-n5">
+        Counter Strike: Global Offensive, widely known as CS:GO, is a FPS (First Person Shooting) Game.
+        CS:GO is the most up-to-date release of the Counter Strike line-up. 
+        Since its first release in 2012, it has attracted on average of 11 Million Monthly Users.
+        <br><br>
+        CS:GO is highly competitive game where players and teams worlwide relies on hours and hours of practice,
+        to excel on map mastery, team chemistry, timing, in-game strategy, aiming accuracy and reaction time.
+        <br><br>
+        The following represents data acquired from the Official SportsData.io Website, detailing
+        the popularity of CS:GO across the world, the demand of the game across its lifespan, 
+        the most dominant teams, and the most favoured and hated maps in the game.
+        </p>
+      </div>
+    </div>
+
+    <div id="copyright">
+      <p>©2022 Ariel Chandra FIT3146 Data Visualisation Assignment 2</p>
+    </div>
 </body>
 </html>

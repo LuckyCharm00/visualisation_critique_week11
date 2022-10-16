@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "All Time Events By Country (2015-2020)",
   "data": {"url": "https://raw.githubusercontent.com/LuckyCharm00/visualisation_critique_week11/main/preprocessed_dataset/top_10_yearly_events.csv"},
-  "width": 600,
-  "height": 400,
+  "width":"container",
+  "height":"container",
   "encoding": {
     "x": {"field": "year_match", "type": "temporal", "title": "Month Of Year"},
     "y": {"field": "total_events", "type": "quantitative", "title": "Total Events"},
