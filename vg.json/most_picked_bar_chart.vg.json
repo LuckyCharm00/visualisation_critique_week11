@@ -1,13 +1,13 @@
 {
   "$schema" : "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 600,
-  "height": 300,
+  "height": 400,
   "title" : {"text" : "Most Picked Map (2015-2020)"},
-  "data" : {"url" : "https://raw.githubusercontent.com/LuckyCharm00/visualisation_critique_week11/main/most_picked_map.csv"},
+  "data" : {"url" : "https://raw.githubusercontent.com/LuckyCharm00/visualisation_critique_week11/main/preprocessed_dataset/most_picked_map.csv"},
   "mark" : "bar",
   "encoding" : {
-    "x" : {"field":"map_names"},
-    "y" : {"field":"value", "type":"quantitative"},
+    "x" : {"field":"map_names", "title": "Map Names"},
+    "y" : {"field":"value", "type":"quantitative", "title": "Number of Times Picked"},
     "xOffset" : {"field":"variable"},
     "color" : {"field":"variable"}
   }

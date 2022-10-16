@@ -1,53 +1,45 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
+  "data": {"url": "https://raw.githubusercontent.com/LuckyCharm00/visualisation_critique_week11/main/preprocessed_dataset/top_10_yearly_events.csv"},
   "width": 600,
-  "height": 300,
-  "description": "Total CS:GO Competitive Events Of All Time",
-  "data": {"url": "top_10_yearly_events.csv",
-  "format": {"parse" : {"year_match": "date:'%Y'"}}},
-  "layer": [
-  {
-    "mark": "rect",
-    "data": {
-      "values": [
-        {
-          "start": "2016",
-          "end": "2018",
-          "event": "CS:GO Popularity Peak"
-        },
-        {
-          "start": "2019",
-          "end": "2020",
-          "event": "CS:GO Popularity Decline"
-        }
-      ],
-      "format": {
-        "parse": {"start": "date:'%Y'", "end": "date:'%Y'"}
-      }
+  "height": 400,
+  "encoding": {
+    "x": {"field": "year_match", "type": "temporal", "title": "Year"},
+    "y": {"field": "total_events", "type": "quantitative", "title": "Total Events"},
+    "color": {
+      "condition": {
+        "param": "hover",
+        "field":"country",
+        "type":"nominal"
+      },
+      "value": "grey"
     },
-    "encoding": {
-      "x": {
-        "field": "start",
-        "timeUnit": "year"
+    "opacity": {
+      "condition": {
+        "param": "hover",
+        "value": 1
       },
-      "x2": {
-        "field": "end",
-        "timeUnit": "year"
-      },
-      "color": {"field": "event", "type": "nominal"}
-    }
+      "value": 0.2
+    },
+    "tooltip": [{"field":"total_events",
+                 "type":"nominal",
+                 "title":"Total Events"}]
   },
-  {
-    "mark": {
-      "type": "line",
-      "point": true
-    },
-    "encoding": {
-      "x": {"timeUnit": "year", "field": "year_match"},
-      "y": {"field": "total_events", "type": "quantitative"},
-      "color": {"field": "country", "type": "nominal"}
-    }
-  }
-]
+  "layer": [{
+    "description": "transparent layer to make it easier to trigger selection",
+    "params": [{
+      "name": "hover",
+      "value": [{"country": "Sweden"}],
+      "select": {
+        "type": "point",
+        "fields": ["country"],
+        "on": "mouseover"
+      }
+    }],
+    "mark": {"type": "circle", "strokeWidth": 8, "stroke": "transparent"}
+  }, {
+    "mark": {"type": "line", "tooltip": true}
+  }],
+  "config": {"view": {"stroke": null}}
 }
-        
